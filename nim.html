@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nim</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+        #space{
+            height: 60vh;
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            overflow-y: scroll;
+            border: 2px solid blue;
+            padding: 20px;
+            gap:20px;
+        }
+        .baton{
+            width: 20px;
+            height: 100px;
+            background-color: black;
+            border-radius: 10px;
+        }
+        .infos{
+            display: flex;
+        }
+        .select{
+            border: solid 3px red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="fin"></h1>
+    <div>
+        <input id="nb_baton" type="number" value="3">
+        <button id="add">ADD</button>
+    </div>
+    <div id="space"></div>
+    <div class="infos">
+        <button id="next">Pass</button>
+        <p id="player">Player : 01</p>
+        <button id="reset">Reset</button>
+    </div>
+    <script src="nim.js"></script>
+</body>
+</html>
