@@ -22,6 +22,6 @@ for(let traffic_light = 30; traffic_light>=0; traffic_light--){
         console.log("explosion")
         break
     }else if(traffic_light===0 && john.sanity >0){
-        console.log("John did it with "+taxi+" changes !")
+        console.log(john.name+" did it with "+taxi+" changes !")
     }
 }
