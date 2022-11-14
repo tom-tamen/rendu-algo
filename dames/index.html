@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dames</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: gray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        #board{
+            width: fit-content;
+            height: 90vh;
+            border: solid 10px #000000;
+        }
+        .box{
+            aspect-ratio: 1 / 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .black{
+            background-color: #664439;
+        }
+        .white{
+            background-color: #f5e6bf;
+        }
+        .pblack{
+            background-color: #000000;
+        }
+        .pwhite{
+            background-color: #ffffff;
+        }
+        .row{
+            display: flex;
+        }
+        .piece{
+            border-radius: 100%;
+            aspect-ratio: 1 / 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="board">
+    </div>
+    <script src="dames.js"></script>
+</body>
+</html>
